@@ -1,0 +1,36 @@
+body {
+    background-color: #555555;
+}
+
+#div {
+    background-color: #808080;
+    border-radius: 20px; /* Скруглить углы */
+    height: 70%;
+    width: 70%; /* Ширина блока */
+    margin: 0 auto; /* Автоматическое центрирование по горизонтали */
+    position: absolute; /* Относительное позиционирование */
+    top: 50%; /* устанавливаем отступ сверху на 50% */
+    left: 50%; /* устанавливаем отступ слева на 50% */
+    transform: translate(-50%, -50%); /* используем трансформацию для точного центрирования блока */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    color: white; /* Цвет текста */
+    margin: auto; /* Внешние отступы */
+    padding: 10px 20px; /* Внутренние отступы */
+    border: none; /* Убрать границу */
+    border-radius: 20px; /* Скруглить углы */
+    font-size: 16px; /* Размер шрифта */
+    cursor: pointer; /* Сделать курсор при наведении */
+    background: rgb(92,152,0);
+    background-image: linear-gradient(90deg, rgba(92,152,0,1) 0%, rgba(5,139,0,1) 20%, rgba(0,140,37,1) 40%, rgba(0,32,157,1) 60%, rgba(115,0,153,1) 80%, rgba(176,0,98,1) 100%); /* задаем градиентный фон для кнопки */
+    background-size: 200%; /* увеличиваем размер фона кнопки */
+    transition: background-position 0.5s ease; /* задаем плавный переход при изменении позиции фона кнопки */
+}
+
+button:hover {
+    background-position: right; /* меняем позицию фона кнопки при наведении курсора на нее */
+}
